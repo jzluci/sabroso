@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>145397003513-o2ckmdtvjkqq0ciqflj9gc3cd3pboa3u.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.145397003513-o2ckmdtvjkqq0ciqflj9gc3cd3pboa3u</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>145397003513-bm0mk4r2i05met227oq9bnug9j8sqdp2.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDnTsqLtMEP9E65IvKHXZk1aDDrSx_jh0w</string>
+	<key>GCM_SENDER_ID</key>
+	<string>145397003513</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.sabroso.sabroso</string>
+	<key>PROJECT_ID</key>
+	<string>sabor-c9b68</string>
+	<key>STORAGE_BUCKET</key>
+	<string>sabor-c9b68.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:145397003513:ios:5c34bb87431bd040c55e28</string>
+</dict>
+</plist>

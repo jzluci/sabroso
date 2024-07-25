@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "145397003513",
+    "project_id": "sabor-c9b68",
+    "storage_bucket": "sabor-c9b68.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:145397003513:android:26c9c4c84788f3cac55e28",
+        "android_client_info": {
+          "package_name": "com.sabroso.sabroso"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB1BuF5kB2_r_e0VR403Y782mMZcUUNeQA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
