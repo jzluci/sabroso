@@ -6,6 +6,7 @@ import 'package:sabroso/modules/home/screens/home_screen.dart';
 import 'package:sabroso/modules/home/screens/new_recipe_screen.dart';
 import 'package:sabroso/modules/user_auth/screens/create_account_screen.dart';
 import 'package:sabroso/modules/user_auth/screens/login_screen.dart';
+import 'package:sabroso/modules/user_auth/screens/welcome_screen.dart';
 import 'firebase_options.dart';
 
 void main() async {
@@ -28,6 +29,7 @@ class MyApp extends StatelessWidget {
         '/login': (context) => LoginScreen(),
         '/signUp': (context) => CreateAccountScreen(),
         '/newRecipe': (context) => NewRecipeScreen(),
+        '/welcome': (context) => WelcomePage(),
       },
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),

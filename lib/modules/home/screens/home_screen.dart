@@ -46,7 +46,7 @@ class HomeScreen extends StatelessWidget {
             onTap: () {
               FirebaseAuth.instance.signOut();
               Navigator.pushNamedAndRemoveUntil(
-                  context, "/login", (route) => false);
+                  context, "/welcome", (route) => false);
               showToast(message: "Signed Out");
             },
             child: Container(
