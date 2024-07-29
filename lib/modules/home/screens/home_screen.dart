@@ -1,6 +1,9 @@
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:sabroso/global/common/toast.dart';
+import 'package:sabroso/modules/home/widgets/nav_bar.dart';
+import 'package:sabroso/utils/AppColor.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -8,8 +11,30 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: NavBar(),
       appBar: AppBar(
-        title: Text("Home Screen"),
+        iconTheme: IconThemeData(color: AppColor.secondary),
+        title: Text(
+          "Discover",
+          style: TextStyle(
+              color: AppColor.secondary,
+              fontWeight: FontWeight.w700,
+              fontFamily: 'inter',
+              fontSize: 25),
+        ),
+        backgroundColor: AppColor.primary,
+        elevation: 0,
+        actions: [
+          //search bar left
+          Container(
+            margin: EdgeInsets.only(left: 16),
+            alignment: Alignment.center,
+            child: IconButton(
+              onPressed: () {},
+              icon: Icon(Icons.search, color: AppColor.secondary, size: 30,),
+            ),
+          ),
+        ],
       ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
@@ -23,7 +48,8 @@ class HomeScreen extends StatelessWidget {
           //add new recipe button
           GestureDetector(
             onTap: () {
-              Navigator.pushNamedAndRemoveUntil(context, "/newRecipe", (route) => false);
+              Navigator.pushNamedAndRemoveUntil(
+                  context, "/newRecipe", (route) => false);
             },
             child: Container(
               width: 150,
@@ -33,37 +59,15 @@ class HomeScreen extends StatelessWidget {
                   borderRadius: BorderRadius.circular(10)),
               child: Center(
                   child: Text(
-                    "Add New Recipe",
-                    style: TextStyle(
-                        color: Colors.white, fontWeight: FontWeight.bold),
-                  )),
+                "Add New Recipe",
+                style:
+                    TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+              )),
             ),
           ),
           SizedBox(
             height: 30,
           ),
-          GestureDetector(
-            onTap: () {
-              FirebaseAuth.instance.signOut();
-              Navigator.pushNamedAndRemoveUntil(
-                  context, "/welcome", (route) => false);
-              showToast(message: "Signed Out");
-            },
-            child: Container(
-              height: 45,
-              width: 100,
-              decoration: BoxDecoration(
-                  color: Colors.blueAccent,
-                  borderRadius: BorderRadius.circular(10)),
-              child: Center(
-                child: Text(
-                  "Sign Out",
-                  style: TextStyle(
-                      color: Colors.white, fontWeight: FontWeight.bold),
-                ),
-              ),
-            ),
-          )
         ],
       ),
     );

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:sabroso/modules/user_auth/screens/login_screen.dart';
 import 'package:sabroso/modules/user_auth/screens/welcome_screen.dart';
 
 class SplashScreen extends StatefulWidget {

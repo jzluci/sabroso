@@ -4,8 +4,6 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:sabroso/modules/app/splash_screen/splash_screen.dart';
 import 'package:sabroso/modules/home/screens/home_screen.dart';
 import 'package:sabroso/modules/home/screens/new_recipe_screen.dart';
-import 'package:sabroso/modules/user_auth/screens/create_account_screen.dart';
-import 'package:sabroso/modules/user_auth/screens/login_screen.dart';
 import 'package:sabroso/modules/user_auth/screens/welcome_screen.dart';
 import 'firebase_options.dart';
 
@@ -26,8 +24,6 @@ class MyApp extends StatelessWidget {
       routes: {
         '/': (context) => SplashScreen(),
         '/home': (context) => HomeScreen(),
-        '/login': (context) => LoginScreen(),
-        '/signUp': (context) => CreateAccountScreen(),
         '/newRecipe': (context) => NewRecipeScreen(),
         '/welcome': (context) => WelcomePage(),
       },
