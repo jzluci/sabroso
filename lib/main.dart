@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:sabroso/modules/app/splash_screen/splash_screen.dart';
 import 'package:sabroso/modules/home/screens/home_screen.dart';
-import 'package:sabroso/modules/home/screens/new_recipe_screen.dart';
+import 'package:sabroso/modules/home/screens/recipe_details_screen.dart';
 import 'package:sabroso/modules/user_auth/screens/welcome_screen.dart';
 import 'firebase_options.dart';
 
@@ -24,13 +24,9 @@ class MyApp extends StatelessWidget {
       routes: {
         '/': (context) => SplashScreen(),
         '/home': (context) => HomeScreen(),
-        '/newRecipe': (context) => NewRecipeScreen(),
         '/welcome': (context) => WelcomePage(),
+        '/recipeDetails': (context) => RecipeDetailPage()
       },
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-      ),
     );
   }
 }
